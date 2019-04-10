@@ -4,7 +4,7 @@ project(cmake VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
-configure_file(builNumber.h.in ${PROJECT_SOURCE_DIR}/buildNumber.h)
+configure_file(buildNumber.h.in ${PROJECT_SOURCE_DIR}/buildNumber.h)
 
 add_executable(helloworld main.cpp)
 
