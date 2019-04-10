@@ -17,8 +17,8 @@ set_target_properties(helloworld test_build PROPERTIES
 )
 
 set_target_properties(test_build PROPERTIES
-	COMPILE_DEFINITIONS BOOST_TEST_DYN_LINK
-	INCLUDE_DIRECTORIES ${Boost_INCUDE_DIR}
+    COMPILE_DEFINITIONS BOOST_TEST_DYN_LINK
+    INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
 )
 
 
