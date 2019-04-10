@@ -1,0 +1,2 @@
+#pragma once
+#cmakedefine PROJECT_BUILD_NUMBER @PROJECT_VERSION_PATCH@
