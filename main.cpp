@@ -12,7 +12,7 @@ using namespace std;
 
 int main()
 {
-	cout<<"build "<< PROJECT_VERSION_PATCH;
+	cout<<"build "<< PROJECT_BUILD_NUMBER;
 	cout<<"Hello, World!";
 }
 
