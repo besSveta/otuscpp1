@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 
 project(cmake VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
+find_package(Threads REQUIRED)
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 configure_file(buildNumber.h.in ${PROJECT_SOURCE_DIR}/buildNumber.h)
