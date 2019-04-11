@@ -10,14 +10,9 @@
 
 using namespace std;
 
-int buildNumber(){
-	return PROJECT_VERSION_PATCH;
-}
-
 int main()
 {
-	auto number = buildNumber();
-	cout<<"build "<< number;
+	cout<<"build "<< PROJECT_VERSION_PATCH;
 	cout<<"Hello, World!";
 }
 
