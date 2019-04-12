@@ -8,10 +8,9 @@ find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 configure_file(buildNumber.h.in ${PROJECT_SOURCE_DIR}/buildNumber.h)
 
 add_executable(helloworld main.cpp)
-
 add_executable(test_build test_build.cpp)
 
-set_target_properties(helloworld test_build PROPERTIES
+set_target_properties(helloworld lib test_build PROPERTIES
 	CXXSTANDARD 17
 	CSS_STANDARD_REQUIRED ON
 	COMPILE_OPTIONS "-Wpedantic;-Wall;-Wextra"
@@ -22,6 +21,9 @@ set_target_properties(test_build PROPERTIES
     INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
 )
 
+target_link_libraries(helloworld
+    Threads::Threads
+)
 
 target_link_libraries(test_build
 	${Boost_LIBRARIES}

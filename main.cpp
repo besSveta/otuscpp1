@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-	cout<<"build "<< GetBuildNumber() ;
+	cout<<"build "<< PROJECT_BUILD_NUMBER;
 	cout<<"Hello, World!";
 }
 
