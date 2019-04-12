@@ -10,7 +10,7 @@ configure_file(buildNumber.h.in ${PROJECT_SOURCE_DIR}/buildNumber.h)
 add_executable(helloworld main.cpp)
 add_executable(test_build test_build.cpp)
 
-set_target_properties(helloworld lib test_build PROPERTIES
+set_target_properties(helloworld test_build PROPERTIES
 	CXXSTANDARD 17
 	CSS_STANDARD_REQUIRED ON
 	COMPILE_OPTIONS "-Wpedantic;-Wall;-Wextra"
