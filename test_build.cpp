@@ -7,13 +7,13 @@
 
 #define BOOST_TEST_MODULE helloworld_test_module
 #include <boost/test/included/unit_test.hpp>
-#include "buildNumber.h"
+#include "lib.h"
 
 BOOST_AUTO_TEST_SUITE(helloworld_test_suite)
 
 BOOST_AUTO_TEST_CASE(helloworld_test_case)
 {
-	BOOST_CHECK(PROJECT_BUILD_NUMBER > 0);
+	BOOST_CHECK(buildNumber() > 0);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
