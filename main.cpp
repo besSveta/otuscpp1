@@ -5,14 +5,16 @@
  *      Author: sveta
  */
 #include <iostream>
-#include "buildNumber.h"
-
+#include "lib.h"
 using namespace std;
+
+
 
 int main()
 {
-	cout<<"build "<< PROJECT_BUILD_NUMBER;
+	cout<<"build "<< buildNumber()<<endl;
 	cout<<"Hello, World!";
+	return 0;
 }
 
 
