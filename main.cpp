@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
 	cout<<"build "<< buildNumber()<<endl;
-	cout<<"Hello, World!";
+	cout<<"Hello, World!"<<endl;
 	return 0;
 }
 
